@@ -1,0 +1,270 @@
+:root {--VariableColor: white;} /* Aca creo una variable la cual le asigno el color blanco. Esto es útil, ya que utilizando esta variable a lo largo de diferentes comandos se puede modificar el color directamente a partir de la variable y no necesariamente hay que cambiar el color uno por uno en los comandos (o sea, si cambio el color de la variable a rojo, todos los comandos que tengan esta variable cambiaran directamente a rojo). Es util cuando se tiene un codigo con mucha información */
+*{margin: 0; padding: 0;} /*Sirve para resear la distancia de los margenes dadas por default. A continuación voy modificando la distancia de los margenes a través del margin-top, margin-botton, margin-right y margin-left*/ 
+
+p{
+    color: var(--VariableColor); 
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif; /* Es el tipo de letra. Si el sistema no encuentra el tipo de letra "times new roman", automaticamente elije el segundo tipo de letra establecido (en este caso seria "times") */
+    font-size: 17px;
+    line-height: 22px; /* Es el espacio que hay entre cada lineas de texto */
+    margin-top:10px; 
+    margin-bottom: 10px; 
+    margin-left: 5px; 
+    margin-right: 10px;} /* color y tamaño de los parrafos */
+
+ol{
+    color: var(--VariableColor);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 20px; 
+    margin-left: 25px;} /*color y tamaño de las lista numérica*/
+
+ul{
+    color: var(--VariableColor);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 25px;} /*color y tamaño de las lista numérica*/
+
+footer{
+    color: var(--VariableColor);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-left: 5px;
+    font-style: italic;} /*color, cursiva y tamaño del pie de página*/
+
+a{
+    color: rgba(243, 239, 9, 0.966);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top:10px;
+    margin-bottom: 70px;
+    text-decoration: underline} /* color, subrayado y tamaño de los links */
+
+a:hover{
+    color: rgb(241, 16, 16);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;} /* el comando "a:hover" permite cambiar las propiedades del link (ya sea tipo, color, tamaño,etc) cuando apoyamos el cursor del mouse sobre el link */
+
+h1 {
+    text-align: center;
+    font-family: "Lobster"; 
+    color:red;
+    font-size: 55px;
+    margin-top:10cm;
+    margin-bottom: 5cm;
+    text-decoration: underline} /* color, subrayado y tamaño de las letras del encabezado numero 1. El comando "font-family" permite cambiar el tipo de letra. Se uso el tipo de letra Lobster, el cual se lo "convocó" mediante un link en el archivi html */
+
+h2{
+    position: relative; /* el comando "Position:relative" junto con los comandos "top, bottom, left y right" te permite modificar la posición relativa de las palabras, es decir, se modifica la posición de estas palabras pero sin afectar al resto del texto de la pagina (o sea no es que se mueve todo, sino que se mueve solo el texto que le adjudicamos este comando) */
+    bottom:10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgba(250, 164, 217, 1); /* la primer letra representa el color rojo (r), la segunda el verde (g), la tercera el azul (b) y el último número representa la opacidad (donde 1 es el valor máximo de opacidad y 0 es el valor máximo de transparencia */
+    font-size: 35px;
+    text-decoration: underline;} /* color, subrayado y tamaño de las letras del encabezado numero 2 */
+
+table{
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: auto;
+    margin-top:10px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    border-color: #58D68D;} /* Poniendo los valores de margin left y righ en "auto" permite centrar la tabla. Tambien se deja espacio hacia arriba y hacia abajo del cuadro (margin). Aumento de ancho y largo del cuadro (width and height)*/
+
+h3{
+    color: yellowgreen;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-decoration: underline} /* color, subrayado y tamaño de las letras del encabezado numero 3 */
+
+h4{
+    color: rgb(250, 164, 217);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px}  /*Titulo de la lista principal */
+
+th{
+    background-color:rgb(209, 206, 206);
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-size: 20px;} /* color de los titulos de los cuadros */
+
+td{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--VariableColor);
+    color: royalblue;
+    font-size: 15px;} /* color de los objetos que componen el cuadro */
+
+.ColorTitForm{
+    color: rgba(255, 212, 133, 0.959); 
+    font-family: 'Times New Roman', Times, serif; /* Permite cambiar el tipo de letra */
+    font-size: 20px; /* tamaño de letra */
+    text-decoration: underline; /* subrayado */
+    margin-top: 10px; /* distancia del margen superior (unidades puede ser en px,cm u otros) */ 
+    margin-bottom: 10px; /* distancia del margen inferior */
+    margin-left: 5px /* distancia del margen izquierdo */
+}
+
+.colorintro{
+    font-family: cursive;
+    color: orange;
+    border-style: double;
+    border-width: 5px;
+    border-color: whitesmoke;
+    margin-bottom: 2px;
+    margin-top: 5.5cm;
+    padding: 5px 5px 5px 5px;} /* "class" utilizado para cambiar un parrafo determinado del archivo html */ /* Si agrego el comando "width: 50%", el texto va a alcanzar el 50% de la página. Font- family me permite cambiar el tipo de letra */ /* el padding modifica el relleno que se encuentra contenido por los bordes (el comando esta aplicado en el sentido de las agujas del reloj, es decir, el primer valor es top, right, buttom y left */
+
+.colorlistaprincipal{
+    color:yellowgreen;
+    font-size: 18px;
+    margin-top:5px;
+    margin-left: 5px;
+    margin-bottom: 5px;} /* Color de la lista principal (la primer lista que aparece en la página) */
+
+
+
+img{
+    width: 300px; /* Sirve para aumentar el tamaño de las imágenes*/
+    height: 300px;
+    display: block;
+    margin-left: auto; /* El "display: block" junto con el "margin left y margin right" en auto, permiten centrar la imagen*/
+    margin-right: auto;
+    border-style: solid;/* Se modifico el tipo, color y ancho de los bordes*/
+    border-color: orange;
+    box-shadow: 0px 5px 40px 7px rgba(255, 253, 253, 0.815), 0px 5px 40px 14px rgba(224, 34, 34, 0.781);  /* "box shadow" permite generar efectos de sombra. El primer valor es el ancho de la sombra en la horizontal, el segundo es el ancho de la sombra en la vertical, el tercero es el desenfoque de la sombra, el cuarto es la extensión de la sombra y el último corresponde al color que tiene la sombra. Se puede combinar varios efectos de sombra si los separamos con comas "box-shadow: 0px 5px 20px 5px rgba(255, 253, 253, 0.815), 10px 15px 20px 5px rgba(100, 100, 253, 0.515)"*/
+    border-width: 3px;
+    border-radius: 30%;
+} /*. El "border-radius" transforma curvos los vertices de las imágenes. Cuanto mayor es el procentaje, mayor es la curatura de los mismos*/
+
+iframe{
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;} /*Sirve para aumentar el tamaño de link del video de Youtube. El "border-radius" vuelve curvos los vertices del video de youtube */
+
+    /* "padding-top: px"; "padding-bottom: px"; "padding-left: px" permite aumentar el relleno del margen*/
+
+.ImgMovible {
+    width:150px;
+    height: 150px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;/* El "display: block" junto con el "margin left y margin right" en auto, permiten centrar la imagen*/
+    margin-bottom: -10cm;
+    box-shadow: 0px 5px 20px 7px rgba(255, 253, 253, 0.815), 0px 5px 20px 7px rgba(224, 34, 34, 0.781);
+    position:relative;
+    animation-name:imagmov;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; /* Hace que la animación se repita indefinidamente */
+}
+
+
+
+@keyframes imagmov { /*Permite darle movimiento a una determinada figura o imagen. En este caso, la figura se desplaza tanto en la vertical como en la horizontal, se utiliza "left" "right" "top" y "bottom"*/
+    0% {left: 0cm; top:0cm} /* PARA APLICAR ESTE COMANDO ES NECESARIO QUE LA POSICIÓN DE LA IMAGEN O LA FIGURA SEA "POSITION: RELATIVE"!! SINO NO VA A FUNCIONAR */
+    16.6% {left: 8cm; top:0cm}
+    33.2% {left: 8cm; top:6.5cm}
+    49.8% {left: 0cm; top:6.5cm}
+    66.4% {left: -8cm; top:6.5cm}
+    83% {left: -8cm; top:0cm}
+    100% {left: 0cm; top:0cm}
+}
+
+.formulario{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: var(--VariableColor);} /* Sirve para acomodar los parrafos del foromulario */
+
+.cuadroNombyApe{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    width: 8cm;} /* Sirve para editar el cuadro de texto donde se ingresa el nombre y apellido */
+
+.cuadroProv{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    width: 8cm;} /* Sirve para editar el cuadro de texto donde se ingresa la provincia */
+
+.cuadroEdad{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    width: 2.5cm;} /* Sirve para editar el cuadro de texto donde se ingresa el edad */
+
+.cuadroEmail{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    width: 5cm;} /* Sirve para editar el cuadro de texto donde se ingresa el email */
+
+.cuadroNacimiento {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    width: 5cm;} /* Sirve para editar el cuadro de texto donde se ingresa la fecha de nacimiento */
+
+.cuadroTema{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    width: 10cm;} /* Sirve para editar el cuadro de texto donde se ingresa el tema a gusto */
+
+.ColorLabelForm {
+    color:white;
+    font-family: 'Times New Roman', Times, serif}
+
+.botonformulario{
+    margin-left: 2cm;
+    margin-top: -1cm;
+    background-color: red;
+    color:yellow;
+    margin-bottom: 5px;
+    width: 5cm;
+    height: 1cm;
+} /* Sirve para editar el boton llamado "enviar" */
+
+.botonformulario:hover{
+    animation-name: animacion-boton; /* Establece el nombre de la animación. El nombre de la animación debe coincidir con el nombre de "Keyframes" (comando que contiene las propiedades de la imagen)*/
+    animation-duration: 7s; /* Establece el tiempo que dura la animación */
+    animation-fill-mode: forwards; /* Permite que quede fijado el último color de la animación (en este caso el "limegreen") mientras el cursor esta sobre el boton*/
+}
+
+@keyframes animacion-boton { /* El nombre de la animación debe coincidir con el nombre de "Keyframes" (comando que contiene las propiedades de la imagen)*/
+    0% {background-color:red;} 
+    25%{background-color: blue;}
+    50%{background-color:lightseagreen;}
+    75%{background-color: lightskyblue;}
+    100%{background-color: limegreen;}
+}/* Establece que la animación vaya cambiando de color a lo largo del tiempo establecido (en este caso 6 seg), partiendo del rojo y llegando al amarillo clarito*/
+
+
+.TamañoAbundanciaMin{
+    width: 300px; /*Ancho de la barra*/
+    height: 27px;} /*Alto de la barra*/
+    
+.TamañoLetraAbundancia {
+    font-size: 0.6cm; /* Tamaño de la letra */
+    font-weight: 500;} /* Espesor de la letra */
+
+#efectosombra {box-shadow: 0px 5px 20px 4px rgba(255, 253, 253, 0.815), 0px 5px 20px 8px rgba(224, 34, 34, 0.781)} 
+/* permite generar efectos de sombra. El primer valor es el ancho de la sombra en la horizontal, el segundo es el ancho de la sombra en la vertical, el tercero es el desenfoque de la sombra, el cuarto es la extensión de la sombra y el último corresponde al color que tiene la sombra. Se puede combinar varios efectos de sombra si los separamos con comas "box-shadow: 0px 5px 20px 5px rgba(255, 253, 253, 0.815), 10px 15px 20px 5px rgba(100, 100, 253, 0.515)"*/
+
+header{
+    margin-top: -1cm;}
+label{
+    color: black;} /*color de los labels */
+
+.Sonido {
+    margin: -4.5cm 0cm 2cm 0cm;
+}
+/* El "ID" TIENE MAYOR IMPORTANCIA QUE EL COMANDO "CLASS", ES DECIR, SIEMPRE PREDOMINA ESTE PRIMERO SI SE ENCUENTRAN AMBOS */
+
+/* RECORDAR QUE EL PROGRAMA EJECUTA LOS COMANDOS DE ARRIBA HACIA ABAJO, ES DECIR, SI TENEMOS PRIMERO UN "CLASS QUE CAMBIA EL COLOR DEL PARRAFO Y LUEGO MÁS ABAJO TENGO OTRA "CLASS" QUE CAMBIA NUEVAMENTE EL COLOR DEL PARRAFO, EL PROGRAMA AUTOMATICAMENTE SE QUEDA CON EL COLOR DE LA ULTIMA CLASE EJECUTADA */
+

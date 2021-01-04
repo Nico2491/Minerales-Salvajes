@@ -1,0 +1,294 @@
+<!DOCTYPE html> <!-- se utiliza para indicarle al navegador con que versión de html estoy trabajando. Esto es util ya que las versiones de html se actualizan frecuentemente -->
+<html>
+<head>
+	<meta charset = "utf-8"> <!-- Determina que estamos trabajando con caracteres latinos !-->
+	<link rel="icon" href="/Imagenes/iconomineral.jpg"> <!-- Agrega el ícono de la pagina. Ubicacion de la carpeta que contiene la imagen-->
+	<meta name="author" content="Nicolas Miranda"> <!-- Para establecer el nombre del autor de la página!-->
+	<meta name="description" content="Minerales naturales con su composición" <!-- Descripción de la pagina. Los buscadores se basan en esta descripción para realizar las busquedas --!>
+	<meta name="keywords" content="minerales, geología, composición"> <!-- Palabras claves que sirven para encontrar esta pagina a través de los buscadores como puede ser google. Las palabras deben estar separadas por comas. -->
+	<title> Minerales salvajes </title> <!-- Titulo de la pestaña de la página !-->
+	<link rel="stylesheet" href="/Estilos Rocas Salvajes.css"> <!-- comando necesario para vincular los comandos del css con los del html. Sin esto, no puedo cambiar los colores de la letra a partir del archivo css!-->
+	<link rel="stylesheet" href="/Fondos Rocas Salvajes.css"> <!-- comando necesario para vincular los comandos del css con los del html. Sin esto, no puedo cambiar los colores del fondo a partir del archivo css!-->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> <!-- Comando usado para poder utilizar otro tipo de letra (Lobster) en el titulo de la página. Esto se modifica desde el css a partir del comando "font-family" -->
+</head>
+<body> 
+	<br>
+	<div class="FondoLoguear"> <!-- Cuadro de texto para ingresar el usuario. Se encuentra ubicado a la izquierda por comandos aplicados en css (ver class en "FOndos rocas salvajes") -->
+		<label for="Usuario">Usuario
+			<input type ="text" id="Usuario" placeholder="Ingrese usuario"> 
+		</label> <!-- El comando "placeholder" muestra el texto de entrada dentro del cuadro de texto. El "label for" debe tener el mismo nombre que el "id" dentro del input -->
+		<br><br>
+		<label for="Contraseña">Password 
+			<input type ="password" id="Contraseña" placeholder="Ingrese contraseña">
+		</label> <!-- Cuadro de texto para ingresar la contraseña. El comando "placeholder" muestra el texto de entrada dentro del cuadro de texto -->
+		<br><br>
+		<input type ="submit" value="Ingresar"> <!-- Crea el boton para ingresar a la página-->
+		<input type ="submit" value="Registrarse"> <!-- Crea el boton para registrarse en la página-->
+		<br><br>
+		<a href="#">¿Olvido su contraseña?</a> <!-- Creo link para recuperar la contraseña. En el hastash iria el link donde te llevaria la pagina-->
+	</div>
+	<div class="Sonido">
+		<audio src="Sonido/ParaElisa.mp3" controls autoplay></audio> <!-- Elijo la ubicación del sonido que quiero que se reproduzca. El parámetro "controls" permite agregar las funciones de frenar el video, subir o bajar el sonido o incluso descargar. El "autplay" permite que se reproduzca automaticamente el sonido al ingregar a la página (no funciona este comando en google chrome, hay que usar otro navegador)-->
+	</div> 
+	<div>
+		<header>
+			<img src="Imagenes/Imagenmovible.jpg" class="ImgMovible" alt="Amatista que gira en circulos">
+			<h1>Minerales Salvajes</h1><!-- Titulo. h1 indica el encabezado de mayor importancia. La importancia de los encabezados decrecen del h1 al h6. Cuando buscamos en google, el buscador se basa en los encabezados de h1.!-->
+		</header>
+		<main>	
+			<p class="colorintro">Los minerales son una sustancia natural, de composición química definida, normalmente sólido e inorgánico, y que tiene una cierta estructura cristalina. Es diferente de una roca, que puede ser un agregado de minerales o no minerales y que no tiene una composición química específica. Hay más de 5300 especies minerales conocidas, de ellas más de 5090 aprobadas por la Asociación Internacional de Mineralogía</p> <!-- Parrafo. A través del "id" se puede cambiar el color del parrafo desde el archivo css !-->
+			<br>
+			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/4mFknSnOvco" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center> <!-- Poner video directamente de youtube. Para eso, hay que ir al video, luego a "compartir" y luego a "insertar". Copio y pego todo el comando !-->
+		</main>
+		<section>
+			<br>
+			<h4>Lista minerales</h4>
+				<ol>
+					<li class="colorlistaprincipal"><a href="#piritainfo" class="colorlistaprincipal">Pirita</a></li> <!-- El " a hef="#piritainfo" " permite originar el punto de salida del enlace interno, es decir que desde punto nos lleva a otro sector determinado sobre la misma página que estará definido por el comando " a name="piritainfo" " -->
+					<li class="colorlistaprincipal"><a href="#magnetitainfo" class="colorlistaprincipal">Magnetita</a></li>
+					<li class="colorlistaprincipal"><a href="#cuarzoinfo" class="colorlistaprincipal">Cuarzo</a></li>
+					<li class="colorlistaprincipal"><a href="#cinabrioinfo" class="colorlistaprincipal">Cinabrio</a></li>
+					<li class="colorlistaprincipal"><a href="#fluoritainfo" class="colorlistaprincipal">Fluorita</a></li>
+					<li class="colorlistaprincipal"><a href="#diamanteinfo" class="colorlistaprincipal">Diamante</a></li>
+					<li class="colorlistaprincipal"><a href="#agatainfo" class="colorlistaprincipal">Agata</a></li>
+					<li class="colorlistaprincipal"><a href="#hematitainfo" class="colorlistaprincipal">Hematita</a></li>
+					<li class="colorlistaprincipal"><a href="#micainfo" class="colorlistaprincipal">Mica</a></li>
+					<li class="colorlistaprincipal"><a href="#granateinfo" class="colorlistaprincipal">Granate</a></li>
+				</ol>
+		</section>
+		<hr> <!-- Divisor !-->
+		<br>
+		<section> <!--  "section" es un tipo de contenedor como es el caso del "div", "footer", "body", "article"-->
+			<h2>Lista de minerales</h2> <!-- Subtitulo h2 centrado !-->
+			<div> <!--"Div" es un comando que nos permite hacer divisiones entre distintos sectores. Si yo encierro dentro de un div determinados componentes de la pagina, y luego con ayuda del css cambio el color del fondo, solamente me cambiara el color del fondo contenido dentro de los "div"-->
+				<a name="piritainfo"><h3>Pirita</h3></a> <!-- Palabra con letras de tamaño 4, negrita y subrayado. El comando "a name" permite originar el punto de llegada del enlace interno !-->
+					<p>La pirita es un mineral del grupo de los sulfuros cuya fórmula química es FeS<sub>2</sub>. Se compone de un 53,48 % de azufre y un 46,52 % de hierro. Frecuentemente macizo, granular fino, algunas veces subfibroso radiado; reniforme, globular, estalactítico. Insoluble en agua, y magnética por calentamiento. Su nombre deriva de la raíz griega pyr (fuego), ya que al rozarla con metales emite chispas, lo cual intrigaba al mundo antiguo. También conocida como el "oro de los tontos", el "oro de los locos" o el "oro de los pobres" por su gran parecido con el oro.
+						<br>
+						<a href="/InfoPirita.html"> Para mayor información acerca de la pirita</a>
+					</p> <!-- Palabras con letras tamaño 3, negrita y subrayado. Para poder acceder a otra pagina mia !-->
+					<br>
+					<figure> <!-- Para ingresar una imagen !-->
+						<img src="/Imagenes/pirita.jfif" alt="Imagen de un pirita"> <!-- Ubicacion de la carpeta que contiene la imagen. Propiedad "alt" sirve para describir la imagen en caso que la computadora o el celular no puedan reproducirla !-->
+					</figure>
+			</div>
+			<div>	
+				<a name="magnetitainfo"><h3>Magnetita</h3></a>
+					<p>La magnetita es un mineral de hierro constituido por óxido ferroso-diférrico (Fe2+Fe3+2O4). Probablemente debe su nombre a la ciudad griega de Magnesia de Tesalia, en la actual prefectura de Magnesia. No obstante, una fábula de Plinio el Viejo atribuye el nombre al de un pastor de nombre Magnes que descubrió este mineral en el monte Ida, observando que se adhería a los clavos de su calzado.1​2​ Otros nombres que recibe este mineral son ferroferrita y morpholita.</p>
+					<br>
+					<figure>
+						<img src="/Imagenes/magnetita.jfif" alt="Imagen de una magnetita"> <!-- Ubicacion de la carpeta que contiene la imagen. Tambien se puede copiar la dirección de la pagina en la que se encuentra la imagen. Propiedad "alt" sirve para describir la imagen en caso que la computadora o el celular no puedan reproducir !-->
+					</figure>
+				<a name="cuarzoinfo"><h3>Cuarzo</h3></a>
+					<p>El cuarzo es un mineral compuesto de sílice (SiO<sub>2</sub>). Tras el feldespato es el mineral más común de la corteza terrestre estando presente en una gran cantidad de rocas ígneas, metamórficas y sedimentarias. Destaca por su dureza y resistencia a la meteorización en la superficie terrestre. Estructuralmente se distinguen dos tipos de cuarzo: cuarzo-α y cuarzo-β. La amatista, el citrino y el cuarzo lechoso son algunas de las numerosas variedades de cuarzo que se conocen en la gemología. Los usos que se le dan a este mineral varían desde instrumentos ópticos, a gemas, placas de oscilación y papel lija.​</p>
+					<br>
+					<figure>
+						<img src="/Imagenes/cuarzo.jfif" alt="Imagen de un cuarzo"> <!-- Ubicacion de la carpeta que contiene la imagen. Tambien se puede copiar la dirección de la pagina en la que se encuentra la imagen. Propiedad "alt" sirve para describir la imagen en caso que la computadora o el celular no puedan reproducir !-->
+					</figure>
+			</div>
+			<div>	
+				<a name="cinabrioinfo"><h3>Cinabrio</h3></a>
+					<p>El cinabrio o bermellón (por su color), también conocido como cinabarita, es un mineral de la clase de los sulfuros (sulfuro de mercurio). Está compuesto en un 85 % por mercurio y 15 % de azufre. En cuanto a su simetría y propiedades ópticas presenta un parecido notable con el cuarzo. Como el cuarzo, exhibe una polarización circular, y Alfred Des Cloizeaux demostró que posee quince veces el poder rotativo del cuarzo. Su fórmula química es HgS (sulfuro de mercurio).</p>
+					<br>
+					<figure>
+						<img src="/Imagenes/cinabrio.jpg" alt="Imagen de un cinabrio"> <!-- Ubicacion de la carpeta que contiene la imagen. Tambien se puede copiar la dirección de la pagina en la que se encuentra la imagen. Propiedad "alt" sirve para describir la imagen en caso que la computadora o el celular no puedan reproducir !-->
+					</figure>
+			</div>
+			<div>
+				<a name="fluoritainfo"><h3>Fluorita</h3></a>
+					<p>La fluorita (también denominada espato flúor o fluorina1​) es un mineral del grupo III (halogenuros) según la clasificación de Strunz, formado por la combinación de los elementos calcio y flúor, de fórmula CaF2 (fluoruro de calcio).​ Su estructura cristalina pertenece al sistema cúbico, grupo espacial Fm3m y se presenta con hábito cúbico, octaédrico y rombododecaédrico. Es un mineral que presenta propiedades físicas de termoluminiscencia y fluorescencia (frente a la luz ultravioleta).​ En la industria, la fluorita se emplea principalmente como fundente en la metalurgia del hierro y del acero. Se utiliza igualmente como fuente de flúor y ácido fluorhídrico, en el esmaltado de la cerámica y en la fabricación de algunos tipos de vidrios ópticos. La belleza de los ejemplares que pueden encontrarse en muchos yacimientos hace que sea un mineral muy apreciado por los museos y coleccionistas particulares.</p>
+					<br>
+					<figure>
+						<img src="/Imagenes/fluorita.jfif" alt="imagen de una fluorita">
+					</figure>
+			</div>
+			<div>
+				<a name="diamanteinfo"><h3>Diamante</h3></a>
+					<p>En la mineralogía, el diamante (del griego antiguo αδάμας, adámas, que significa invencible o inalterable) es un alótropo del carbono donde los átomos de carbono están dispuestos en una variante de la estructura cristalina cúbica centrada en la cara denominada «red de diamante». El diamante es la segunda forma más estable de carbono, después del grafito; sin embargo, la tasa de conversión de diamante a grafito es despreciable a condiciones ambientales. El diamante tiene renombre específicamente como un material con características físicas superlativas, muchas de las cuales derivan del fuerte enlace covalente entre sus átomos. En particular, el diamante tiene la más alta dureza y conductividad térmica de todos los materiales conocidos por el ser humano. Estas propiedades determinan que la aplicación industrial principal del diamante sea en herramientas de corte y de pulido además de otras aplicaciones.</p>
+					<br>
+					<figure>
+					<img src="/Imagenes/diamante.jpg" alt="imagen de un diamante">
+					</figure>
+			</div>
+				<a name="agatainfo"><h3>Agata</h3></a>
+					<p>El ágata no es un mineral específico, sino un conjunto de variedades microcristalinas del cuarzo (sílice). En realidad, son variedades de calcedonia que presentan bandas de varios colores poco contrastados. La diferencia de colores aparece porque en cada zona la estructura y el número de inclusiones en la calcedonia varía, con lo que cambian sus propiedades.	El ágata se encuentra en rocas volcánicas cuyo tamaño puede variar desde milímetros a varios metros. Se caracteriza por presentar una serie de bandas concéntricas de colores similares, opacos y translúcidos, que recuerdan el corte de un tronco de árbol en sentido circular. Puede adoptar diversas formas y presentarse en muchas variedades. Es una roca dura y resistente a los reactivos químicos.</p>
+					<figure>
+						<img src="/Imagenes/agata.jpg" alt="imagen de un agata" >
+					</figure>
+			<div>
+				<a name="hematitainfo"><h3>Hematita</h3></a>
+					<p>La hematita, hematites, oligisto o acerina es la forma mineral del óxido férrico, cuya fórmula es Fe<sub>2</sub>O<sub>3</sub>. Su nombre se remonta a los años 300-325 a. C. cuando Teofrasto la denominó «αιματίτις λίθος» (aematitis lithos), en griego ‘piedra de sangre’. Traducido en el año 79 por Plinio el Viejo como haematites (‘parecida a la sangre’), en alusión al vívido color rojo de su polvo; es posiblemente el primer mineral cuyo nombre lleva el habitual sufijo -ita. La forma moderna de su nombre evolucionó simplificando su ortografía, excluyendo la primera «a» (hematites).</p>
+					<br>
+					<figure>
+						<img src="Imagenes/hematita.jpg" alt="imagen de una hematita">
+					</figure>
+			</div>
+			<div>
+				<a name="micainfo"><h3>Mica</h3></a>
+					<p>Las micas son minerales pertenecientes a un grupo numeroso de silicatos de alúmina, hierro, calcio, magnesio y minerales alcalinos caracterizados por su fácil exfoliación en delgadas láminas flexibles, elásticas y muy brillantes, dentro del subgrupo de los filosilicatos. Su sistema cristalino es monoclínico. Generalmente se las encuentra en las rocas ígneas tales como el granito y las rocas metamórficas como el esquisto. Las variedades más abundantes son la biotita y la moscovita. Las micas figuran entre los minerales más abundantes de la naturaleza. En total constituyen aproximadamente 3,8 % del peso de la corteza terrestre, encontrándose, fundamentalmente en rocas intrusivas ácidas y esquistos micáceos cristalinos. Se encuentra en la naturaleza junto con otros minerales (cuarzo, feldespato) formando vetas dentro de rocas generalmente duras. Es necesario realizar voladuras de las rocas para después eliminar los minerales extraños y obtener así la llamada mica en bruto. El rendimiento de esta explotación es muy bajo. Normalmente se cifra en un 1 % a un 2 %, y raramente se llega al 10 %. La mica en bruto es posteriormente exfoliada, recortada y exfoliada de nuevo para pasar a ser clasificada de acuerdo con el tamaño de los cuadrados obtenidos. Posteriormente, es clasificada de nuevo atendiendo a la transparencia, contenido de minerales extraños, lisura de la superficie, etc.</p>
+					<br>
+					<figure>
+						<img src="/Imagenes/mica.jpg" alt= "imagen de una mica">
+					</figure>
+			</div>
+				<a name="granateinfo"><h3>Granate</h3></a>
+					<p>Son un grupo de silicatos que han sido usados desde la edad de bronce como piedra preciosa y abrasivo. Su nombre procede del latín granatum, y hace referencia al aspecto y color de algunos de ellos, semejantes a los granos de la fruta conocida como granada (Punicum granatum). La química de los granates es muy compleja. Se considera la existencia de series de composiciones químicas intermedias entre unos extremos que son los que se consideran especies propiamente. Un ejemplar dado recibe el nombre de la especie dominante, o, si esta no se conoce con seguridad, de la serie. Así, podemos tener grosularia, andradita o un granate de la serie grosularia-andradita</p>
+					<br>
+					<figure>
+						<img src="Imagenes/granate.jfif" alt="imagen de un granate">
+					</figure>
+			</div>
+		</section>
+			<br>
+			<p>Para mayor información acerca de otros minerales, visitar <a href="https://www.sgm.gob.mx/Web/MuseoVirtual/Minerales/Clasificacion-de-los-minerales.html" target="_blank"><b>Museo virtural de minerales</b></a></p>	<!-- Para poder acceder al link de otra pagina citada. "target" nos permite abrir la pagina en otra pestaña !-->	
+		<hr> <!-- Divisor !-->
+		<section>
+			<div>
+				<br>
+				<h2>Cuadro minerales</h2> <!-- Subtitulo h2 centrado!-->
+				<table border="4" id="efectosombra"> <!-- Para crear una tabla con grosor de borde 4, bordes rojos y fondo blanco !-->
+					<thead>
+						<tr> <!-- Para ingresar los títulos de la tabla. !-->
+							<th><b>Tipo de rocas</b></th> <!-- Distintos títulos de la tabla !-->
+							<th><b>Color</b></th>
+							<th><b>Composición</b></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr> <!-- Valores de la fila 1 !-->
+							<td>Cuarzo</td> <!-- Fila 1 - Columna 1 !-->
+							<td>Blancuzco</td> <!-- Fila 1 - Columna 2 !-->
+							<td>SIO<sub>2</sub></td> <!-- Fila 1 - Columna 3 !--> <!-- "sub" subindice !-->
+						</tr>
+						<tr> <!-- Valores de la fila 2 !-->
+							<td>Pirita</td> <!-- Fila 2 - Columna 1 !-->
+							<td>Dorado</td> <!-- Fila 2 - Columna 2 !-->
+							<td>FeS<sub>2</sub></td> <!-- Fila 2 - Columna 3 !-->
+						<tr> <!-- Valores de la fila 3 !-->
+							<td>Magnetita</td> <!-- Fila 3 - Columna 1 !-->
+							<td>Negro oscuro</td> <!-- Fila 3 - Columna 2 !-->
+							<td>FeO<sub>2</sub></td> <!-- Fila 3 - Columna 3 !-->
+						</tr> <!-- Valores de la fila 4 !-->
+							<td>Cinabrio</td> <!-- Fila 4 - Columna 1 !-->
+							<td>Rojo intenso</td> <!-- Fila 4 - Columna 2 !-->
+							<td>HgS</td> <!-- Fila 4 - Columna 3 !-->
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<hr>
+		<br>
+		<section>
+			<div>
+				<h2>Abundancia de elementos presente en la corteza continental</h2><!-- Subtitulo centrado de letra de tamaño 6 con negrita y subrayado !-->
+					<p class="TamañoLetraAbundancia">Oxígeno: <meter value="46.71" min="0" max="100" high="90" class="TamañoAbundanciaMin"></meter></p> <!-- Para crear las barras de porcentaje !-->
+					<p class="TamañoLetraAbundancia">Silice: <meter value="27.69" min="0" max="100" high="90" class="TamañoAbundanciaMin"></meter></p>
+					<p class="TamañoLetraAbundancia">Aluminio: <meter value="8.05" min="0" max="100" high="90" class="TamañoAbundanciaMin"></meter></p>
+					<p class="TamañoLetraAbundancia">Hierro: <meter value="5.05" min="0" max="100" high="90" class="TamañoAbundanciaMin"></meter></p>
+					<p class="TamañoLetraAbundancia">Calcio: <meter value="3.65" min="0" max="100" high="90" class="TamañoAbundanciaMin"></meter></p>
+					<p class="TamañoLetraAbundancia">Sodio: <meter value="2.75" min="0" max="100" high="90" class="TamañoAbundanciaMin"></meter></p>
+					<p class="TamañoLetraAbundancia">Potasio: <meter value="2.58" min="0" max="100" high="90" class="TamañoAbundanciaMin"></meter></p>
+					<p class="TamañoLetraAbundancia">Hierro: <meter value="2.08" min="0" max="100" high="90" class="TamañoAbundanciaMin"></meter></p>
+					<p class="TamañoLetraAbundancia">Titanio: <meter value="0.62" min="0" max="100" high="90" class="TamañoAbundanciaMin"></meter></p>
+			</div>
+		</section>
+		<hr>
+		<section>	
+			<div>
+				<h3>Minerales a agregar proximamente</h3>
+					<ol> <!-- Lista numérica !-->
+						<li>Berilo</li>
+						<li>Halita</li>
+						<li>Calcita</li>
+						<li>Apatito</li>
+						<li>Talco</li>
+						<li>Hematita</li>
+						<li>Borax</li>
+					</ol>
+				<h3>Algunas rocas de interes a agregar</h3>
+					<ul> <!-- Lista no numérica (con asteriscos) !-->
+						<li>Komatita</li>
+						<li>Peridotita</li>
+						<li>Gabro</li>
+						<li>Riolita</li>	
+					</ul>
+				<br>
+			</div>
+		</section>
+		<hr>
+		<br>
+		<section>
+			<div id="Fondoformulario"> <!-- El "id" cumple la misma función que el comando "class", simplemente que es mas especifico. El "id" me permite centrar el formulario-->
+				<h4 class="ColorTitForm">Formulario sobre tematicas que les gustaria que agregue a la pagina</h4>
+				<form action="#"> <!-- La etiqueta "form" permite crear un formulario. En el hastash iria el link del servidor o el mail a donde quiero que llegue la información recolectada por la encuesta -->
+					<label for="formularioNombyApe" class="formulario">Nombre y Apellido
+						<input type ="text" required id="formularioNombyApe" class="cuadroNombyApe" placeholder="Ingrese nombre">
+					</label> <!-- Componentes del formulario-->
+					<br>
+					<label for="formularioEdad" class="formulario">Edad
+						<input type ="number" required id="formularioEdad" class="cuadroEdad" placeholder="Ingrese edad">
+					</label> <!-- Componentes del formulario. "required" es un comando que no permite que aquel que esta llenando el formulario deje cuadros sin completar. El "label for" debe tener el mismo nombre que el "id" dentro del input (haciendo click en el texto "edad" me lleva directo a completar su cuadro de texto -->
+					<br>
+					<label for="formularioEmail" class="formulario">Email
+						<input type ="email" required id="formularioEmail" class="cuadroEmail" placeholder="Ingrese Email">
+					</label> <!-- Componentes del formulario--> 
+					<br>
+					<label for="formularioNacimiento" class="formulario">Fecha de nacimiento
+						<input type="date" required id="formularioNacimiento" class="cuadroNacimiento" placeholder="Ingrese fecha de nacimiento">
+					</label>
+					<br>
+					<label for="formularioProv" class="formulario">Provincia
+						<input type ="text" required id="formularioProv" class="cuadroProv" placeholder="Ingrese provincia">
+					</label> <!-- Componentes del formulario-->
+					<br>
+					<label for="formularioTema" class="formulario">Tematica que le gustaria
+						<input id="formularioTema" class="cuadroTema" type ="text" required placeholder="Ingrese tematica a gusto">
+					</label> <!-- Componentes del formulario-->
+					<br>
+
+					<p class="formulario">Usted actualmente es: </p>
+					<input type="radio" id="laburante" value="Laburante" name="laburante-estudiante-desempleado-laburante y estudiante">
+						<label for="laburante" class="ColorLabelForm">Laburante</label> <!--"value" tiene que tener el nombre de la opción, ya que si se omite este comando, cuando se envie el formulario no se va a registrar la respuesta seleccionada por la persona que lleno el formulario. En el "name" debe figurar las diferentes opciones, esta opción permite solamente elegir una unida respuesta y no seleccionar varias-->
+					<input type="radio" id="estudiante" value="Estudiante" name="laburante-estudiante-desempleado-laburante y estudiante">
+						<label for="estudiante" class="ColorLabelForm">Estudiante</label> <!--"value" tiene que tener el mismo nombre que la etiqueta (estudiante), si se omite este comando, cuando se envie el formulario no se va a registrar la respuesta seleccionada por la persona que lleno el formulario. El "label for" debe tener el mismo nombre que el "id" dentro del input (haciendo click en la palabra "estudiantes" me lleva directo a completar su cuadro de texto -->
+					<input type="radio" id="desempleado" value="Desempleado" name="laburante-estudiante-desempleado-laburante y estudiante">
+						<label for="desempleado" class="ColorLabelForm">Desempleado</label> 
+					<input type="radio" id="laburante y estudiante" value="laburante y estudiante" name="laburante-estudiante-desempleado-laburante y estudiante">
+						<label for="laburante y estudiante" class="ColorLabelForm">Laburante y estudiante</label>
+					<br><br>
+					<p class="formulario">Que tipo de rocas le gustan: </p>
+					<input type="checkbox" id="rocas metamórficas" value="Rocas metamórficas" name="rocas">
+						<label for="rocas metamórficas" class="ColorLabelForm">Rocas metamórficas</label> <!-- "value" tiene que tener el mismo nombre que la opción (rocas metamórficas), si se omite este comando, cuando se envie el formulario no se va a registrar la respuesta seleccionada por la persona que lleno el formulario -->
+					<input type="checkbox" id="rocas igneas" value="Rocas igneas" name="rocas" checked>
+						<label for="rocas igneas" class="ColorLabelForm">Rocas igneas</label> <!-- "value" tiene que tener el mismo nombre que la opción (rocas metamórficas), si se omite este comando, cuando se envie el formulario no se va a registrar la respuesta seleccionada por la persona que lleno el formulario. El comando "checked" te permite seleccionar una opcion determianda -->
+					<input type="checkbox" id="rocas sedimentarias" value="Rocas sedimentarias" name="rocas">
+						<label for="rocas sedimentarias" class="ColorLabelForm">Rocas sedimentarias</label>
+					<br><br>
+					<input type="submit" value="Enviar!" class="botonformulario"><!-- boton "enviar"-->
+				</form>
+			</div>
+		<br>
+		</section>
+		<br>
+		<hr>
+		<h3>Páginas con información acerca de minerales, visitar:</h3>
+			<nav> <!-- Es una etiqueta contenedor (como article, div, seccion, etc) que por lo general contiene a los links -->
+				<ul>
+					<li><a href="https://mineralesdelmundo.com/">Minerales del mundo</a></li>
+					<li><a href="https://www.minerales.info/info.php">Minerales info</a></li>
+					<li><a href="https://www.asturnatura.com/asturnaturaDB/minerales/mineral.php">Astornauta</a></li>
+					<li><a href="http://www.geovirtual2.cl/Mineral/000mincontenido.htm">GeoVirtural</a></li>
+				</ul>
+			</nav>
+		<br>
+		<hr>
+		<br>
+		<footer>
+			<p>Queda prohibida la reproducción total o parcial de los contenidos de esta web.<br><br>Privacidad - Contacto - <mark>Gestionado por Nicocmiranda24@gmail.com</mark></p>
+		</footer> <!-- "footer" es el pie de página. La etiqueta "br" deja espacios entre renglones. "mark" resalta texto !-->
+	</div>
+</body>
+</html>
+
+		
+	

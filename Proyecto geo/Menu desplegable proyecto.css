@@ -1,0 +1,61 @@
+/*ESTILOS GENERALES*/
+
+.navegacion{
+    padding: 0cm 1cm 0cm 1cm;
+    margin: 0cm 2cm;
+}
+
+
+.navegacion ul{
+    list-style: none;
+    padding:0;
+}
+
+.navegacion li {
+    line-height: 3em;
+    position: relative;
+}
+
+
+.navegacion a{
+    text-decoration: none;
+    color:white;
+    padding: 0 2cm 0cm 2cm;
+    display:block;
+}
+
+.navegacion a:hover {
+    background-color: coral;
+}
+
+.navegacion li ul{ /*No muestra los elementos que se encuentran en el submenu*/
+    display: none;
+}
+
+.navegacion li:hover ul {
+    display: block;
+    z-index: 1; /* Permite establecer un orden de capas. El número d1 indica la capa que se encuentra por encima de las otras. Esto lo utilizo para que cuando se desplegue el submenu no se encuentre tapado por el título */
+}
+
+/*PRIMER NIVEL*/
+
+.navegacion > ul { /* el signo mayor indica que solo se seleccionan los "ul" hijos de la etiqueta navegación */
+    background-color: #333;
+    display: block;
+    width: 100%;
+}
+
+.navegacion > ul > li { /* Utilizar el signo mayor, indica que solo se seleccionan los "li" de los "ul" hijos pertenecientes a la clase "navegación". El comando "flotat" permite ubicar los elementos en la horizontal */
+    float: left;
+}
+
+
+/*SEGUNDO NIVEL*/
+
+.Menu li ul {
+    position: absolute; /*Permite sacar los "ul" fuera de la maquetación*/
+} 
+
+.Menu li {
+    background-color:black;
+}

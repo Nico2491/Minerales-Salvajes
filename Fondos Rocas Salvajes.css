@@ -1,0 +1,22 @@
+body{
+    background: url('/Imagenes/fondo2.png')} /* Cambia el fondo del body por una imágen. Fondo sacado de https://www.toptal.com/designers/subtlepatterns */
+/* la propiedad "background-repeat: no-repeat" permite que la imagen solo quede puesta una vez y que no se repita */
+/* la propiedad "background-position: right top" permite ubicar la imagen del lado derecho arriba de la página */
+
+.FondoLoguear {
+    margin: -0.5cm 0cm 0cm 34cm; /* Es la distancia que hay entre el margen y el borde*/
+    border-style: solid;
+    border-width: 5px;
+    border-color: lightslategray;
+    padding: 0.5cm 0cm 0.5cm 0.5cm; /* Es el relleno que se encuentra contenido por los bordes */
+    background: linear-gradient(45deg, rgb(51, 47, 241), rgb(33, 185, 245), rgb(85, 229, 240), rgb(198, 255, 250));}/* permite generar un degrade de colores. El primer parametro indica desde que dirección comienza a generar el degrade (90° indica que el degrade se origina horizontalmente de izq a der), mientras que los demas parametros son los colores en los que se va degradando */
+
+#Fondoformulario{
+    background: repeating-linear-gradient(45deg,rgb(155, 156, 155) 10px, rgb(129, 129, 167) 20px, rgb(73, 152, 243) 30px); /*  permite generar un degrade de colores. El primer parametro indica desde que dirección comienza a generar el degrade (90° indica que el degrade se origina horizontalmente de izq a der), mientras que los demas parametros son los colores en los que se va degradando. Los px indican el ancho de cada linea de colores */
+    margin-right: 12cm; /*Cambio el fondo y ancho del margen que ocupa el formulario */
+    margin-left: 10cm;
+    box-shadow: 0px 0px 20px 4px rgba(142, 143, 142, 0.658), 0px 5px 20px 10px rgba(241, 241, 241, 0.945)} /* "box shadow" permite generar efectos de sombra. El primer valor es el ancho de la sombra en la horizontal, el segundo es el ancho de la sombra en la vertical, el tercero es el desenfoque de la sombra, el cuarto es la extensión de la sombra y el último corresponde al color que tiene la sombra. Se puede combinar varios efectos de sombra si los separamos con comas "box-shadow: 0px 5px 20px 5px rgba(255, 253, 253, 0.815), 10px 15px 20px 5px rgba(100, 100, 253, 0.515)"*/
+
+    
+    
+/*El "ID" TIENE MAYOR IMPORTANCIA QUE EL COMANDO "CLASS", ES DECIR, SIEMPRE PREDOMINA ESTE PRIMERO SI SE ENCUENTRAN AMBOS */

@@ -1,0 +1,66 @@
+
+body {
+    background-color: burlywood;
+}
+
+/*Estilos generales*/
+
+.navegacion{
+    padding: 0cm 2cm 0cm 2cm;
+}
+
+
+.navegacion ul{
+    list-style: none; /* No muestra los simbolos de la lista (circulos) */
+    padding:0;
+}
+
+.navegacion li {
+    line-height: 3em;
+    position: relative;
+}
+
+
+.navegacion a{
+    text-decoration: none; /* Saca el subrayado */
+    color:white; 
+    padding: 0 2cm 0cm 2cm;
+    display:block;
+}
+
+.navegacion a:hover {
+    background-color: coral;
+}
+
+.navegacion li ul{ /*No muestra los elementos que se encuentran en el submenu*/
+    display: none;
+}
+
+.navegacion li:hover ul { /*Me muestra la lista del submenu al apoyar el cursor sobre el menu desplegable */
+    display: block;
+}
+
+/*PRIMER NIVEL*/
+
+.navegacion > ul { /* el signo mayor indica que solo se seleccionan los "ul" hijos de la etiqueta navegación */
+    background-color: black;
+    display: table;
+    width: 100%;
+}
+
+
+.navegacion > ul > li { /* Utilizar el signo mayor, indica que solo se seleccionan los "li" de los "ul" hijos pertenecientes a la clase "navegación". El comando "float" permite ubicar los elementos en la horizontal */
+    float: left;
+}
+
+
+/*SEGUNDO NIVEL*/
+
+.Menu li ul {
+    position: absolute; /*Permite sacar los "ul" fuera de la maquetación*/
+    background-color: black;
+} 
+
+
+
+

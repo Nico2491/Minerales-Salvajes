@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* TITULO DE LA PÁGINA */
+header h1 {
+    font-size: 2cm;
+    text-align: center;
+    color:greenyellow;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    left:16cm;
+    top: 6cm;
+} /*Por default viene el position static*/
+
+/*FONDO PRINCIPAL*/
+
+body {
+    background: url('/Proyecto geo/Imagenes/Fondo principal.png')
+
+}
+
+/* CUADRO LOGEAR */
+
+.cuadrologear {
+    height: 4.5cm;
+    width: 7cm;
+    border-radius: 15%;
+    border-style: double;
+    border-color: grey;
+    background: linear-gradient(45deg, rgb(0, 12, 117), rgb(94, 36, 255), rgb(12, 178, 255), rgb(178, 232, 241), white);
+    position: absolute; /* "Position relative" junto con los comandos left, right, top y buttom permiten mover una distancia determinada (la que elijamos) desde su posición original */
+    left: 35cm;
+}
+
+.cuadrologear label {
+    position: absolute; /* "Position absolute" junto con los comandos left, right top y buttom permiten moverse una distancia determinada (la que elijamos) desde su posición original. Si se encuentra dentro de una caja padre con la "position relative", la distancia que se mueva va a ser a partir de os bordes de la caja padre*/
+    left: 0.3cm;
+    color:white
+}
+
+.cuadrologear div input {
+    position: relative;
+    top:1cm;
+    left:0.3cm;
+}
+
+.cuadrologear a {
+    position: absolute;
+    top: 3.5cm;
+    left:0.3cm;
+    color:white;
+
+}
+
+.cuadrologear a:hover {
+    color:orange
+}
+
